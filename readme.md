@@ -41,10 +41,15 @@ Default commands from Playwright Installation:
 Other Editor
 ------------
  - Eclipse, PvCharm, IntelliJ, Cursor
+
+Usefull material
+----------------
  
  - spec files are called test case
 
-
  - Account on github.com
  - Install - git from git-scm website 
- - to check the gitGholami-Bahareh
+ - To check the Git Version - In terminal - git -v
+ - Basic GIT Commands - https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html
+        git config --global user.name "Sam Smith" git config --global user.email sam@example.com
+        git config --global user.name "ishatesting7" git config --global user.email ishatesting7@gmail.com
