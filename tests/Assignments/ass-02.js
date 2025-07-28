@@ -1,3 +1,4 @@
+//Array's Method
 
 const arStr = ["bahar","Ali","Saba","Vida","Sepi","Kave"]
 const arNum = [1365,27,5,86,110,213]
@@ -154,16 +155,32 @@ console.log(arNew2)*/
 //**splice()**
 // to remove, add or change items of array
 //array.splice(start, deleteCount, item1, item2, ...)
-console.log(arStr)
-console.log(arStr.splice(0,3, "folan", "bahman", "bisar"))
-console.log(arStr)
+// console.log(arStr)
+// console.log(arStr.splice(0,3, "folan", "bahman", "bisar"))
+// console.log(arStr)
 
-console.log(arNum)
-arNum.splice(2,1,55,66)
-console.log(arNum)
+// console.log(arNum)
+// arNum.splice(2,1,55,66)
+// console.log(arNum)
 
-arNum.splice(2,2,5)
-console.log(arNum)
+// arNum.splice(2,2,5)
+// console.log(arNum)
+
+//**sort() **
+//input and output = array
+//to sort it alphabetic order , or from lower to higher ...BUT:
+//in a special way considering capital letter first , not consider lenght of digit 
+//the sort is first spaces, then capital letters 
+console.log(arNum.sort()) //[ 110, 1365, 213, 27, 5, 86 ]
+console.log(arStr.sort()) //[ 'Ali', 'Kave', 'Saba', 'Sepi', 'Vida', 'bahar' ]
+
+
+//join()// turning Array to string...
+console.log(arNum.sort().join()) //110,1365,213,27,5,86
+console.log(arStr.sort().join()) //Ali,Kave,Saba,Sepi,Vida,bahar
+console.log(arStr.sort().join("")) //AliKaveSabaSepiVidabahar
+
+//
 
 
 
