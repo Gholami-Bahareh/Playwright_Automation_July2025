@@ -1,5 +1,58 @@
 // ***In an array of Number, find the largest number***
+let arr = [43,675,332,45,345,654]
+function findMax(array){
+    console.log(Math.max(...arr))
+}
+findMax(arr)
+
 // ***In an array of Number, How many are Prime numbers***
+// ***In an array of Number, How many are Prime numbers***
+
+
+console.log("In an array of Number, How many are Prime numbers:")
+
+let arrP = [674,54,17,37,109,16]
+let sum = 0
+arrP.forEach(function(num){
+    let comp = Math.sqrt(num)
+    let parr = []
+    
+    
+    for(r=2;r<=comp;r++){
+        let p = num%r
+        parr.push(p)
+        }
+       if( parr.includes(0)===true){
+        console.log(`${num} is not prime`)
+       }
+       else{
+        console.log(`${num} is a prime number`)
+        sum+=1
+       }
+     
+    }  
+)
+console.log(`there are ${sum} prime numbers`)
+//OR:
+function numberOfProme(anarray) {
+    let sum = 0
+anarray.forEach(function(num){
+    let comp = Math.sqrt(num)
+    let parr = []
+    for(r=2;r<=comp;r++){
+        let p = num%r
+        parr.push(p)
+        }
+       if( parr.includes(0)===false){
+         sum+=1
+       }
+    }  
+)
+console.log(`there are ${sum} prime numbers`)
+}
+
+numberOfProme(arrP) 
+
 
 
 // ***For a String - 'London' -> Reverse the letter of the String***

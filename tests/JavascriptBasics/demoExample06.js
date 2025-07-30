@@ -1,7 +1,8 @@
-const number = 333.3124;
+const number = 333.312467;
 
 const [integerPartStr, decimalPartStr] = number.toString().split('.');
 //integerPartStr, decimalPartStr - In String format
+console.log(number.toString().split('.'))
 
 const integerPart = parseInt(integerPartStr, 10);
 const decimalPart = parseInt(decimalPartStr, 10);

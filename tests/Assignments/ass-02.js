@@ -7,8 +7,9 @@ const arNum = [1365,27,5,86,110,213]
 //combining two arrays
 /*const arNew = arStr.concat(arNum)
 console.log(arNew)
-const arNew2 = arNum.concat(arStr)
+const arNew2 = arNum.concat(arStr) //***OR***   const arNew2 = [...arNum,...arStr]
 console.log(arNew2)*/
+
 
 //**at()**
 // to Return the item located at the specified index.

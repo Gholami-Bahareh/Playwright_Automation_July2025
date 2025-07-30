@@ -107,3 +107,9 @@ console.log(text.match("ain")) // ['ain',index: 5,input: 'The rain in SPAIN stay
 console.log(text.match(/ain/g)) //
 console.log(text.match(/ain/i)) //
 console.log(text.match(/ain/gi)) //
+
+
+//**parseIn()**
+//A string to convert into a number.
+let numTexi = "8764473.849";
+console.log(parseInt(numTexi));
