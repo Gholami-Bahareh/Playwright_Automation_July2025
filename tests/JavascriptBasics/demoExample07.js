@@ -1,6 +1,6 @@
 //Array with Javascript
 
-let arrayDemo = [345, "Demo", true, 203.39];
+let arrayDemo = [345, "Demo", true, 203.39]; //array in JavaScript can contain element with different datatype
 
 arrayDemo.forEach(function(val, ind){
 

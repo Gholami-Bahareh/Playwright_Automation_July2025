@@ -12,6 +12,20 @@ else{
     console.log("It is odd number");
 }
 
+function checkForOddOrEven(number){
+    if(number%2===0){
+        console.log(`${number} is an Even number` )
+    }
+    else{
+       console.log(`${number} is an Odd number` ) 
+    }
+}
+
+checkForOddOrEven(109)
+checkForOddOrEven(52)
+checkForOddOrEven(8)
+checkForOddOrEven(29)
+
 /*
 if(condition)
 //statement

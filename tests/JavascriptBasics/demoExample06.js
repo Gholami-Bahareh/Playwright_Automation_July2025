@@ -6,14 +6,13 @@ console.log(number.toString().split('.'))
 
 const integerPart = parseInt(integerPartStr, 10);
 const decimalPart = parseInt(decimalPartStr, 10);
+//now that we have two number again , we can do : integerPart%2
+//BUT, even if I do : integerPartStr%2, it works! S
+// ince we use %, javascript change it to number automatically
 
 function checkEvenOrOdd(value, label) {
   if (value % 2 === 0) {
     console.log(`${label} (${value}) is EVEN`);
-    
-    // console.log(`${label} jnadsjn ksdnas `)
-    // console.log(' ')
-    // console.log(" ")
 
   } else {
     console.log(`${label} (${value}) is ODD`);
