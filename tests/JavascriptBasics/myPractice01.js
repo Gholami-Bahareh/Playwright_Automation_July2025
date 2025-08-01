@@ -1,4 +1,4 @@
-//to write if something is in the array say testcase= pass, else say not pass
+//to write if something is in the array say testcase= pass, else say not pass.. Using ***flag***
 const result = [ 'Yellow', 'Black', 'Orange','violet', 'Indigo' ]
 let flag = false
 for(i=0;i<result.length;i++){

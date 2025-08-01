@@ -6,9 +6,6 @@ function findMax(array){
 findMax(arr)
 
 // ***In an array of Number, How many are Prime numbers***
-// ***In an array of Number, How many are Prime numbers***
-
-
 console.log("In an array of Number, How many are Prime numbers:")
 
 let arrP = [674,54,17,37,109,16]
