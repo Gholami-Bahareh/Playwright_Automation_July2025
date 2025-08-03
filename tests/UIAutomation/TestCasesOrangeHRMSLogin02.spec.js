@@ -10,7 +10,7 @@ test('test login with wrong password', async ({ page }) => {
  
 });
 
-test('test login with wrong usernmae', async ({ page }) => {
+test.only('test login with wrong usernmae', async ({ page }) => {
   await page.goto(baseUrl);
   await page.getByPlaceholder('Username').fill('Admn')
   await page.locator("[type='password']").fill('admin123')

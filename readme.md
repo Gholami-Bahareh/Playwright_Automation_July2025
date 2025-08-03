@@ -81,3 +81,10 @@ CSS
 2- If you are aware about id in the html structure then the css selector would be => #id = #input-email
 3- If you are aware about attribute and value => [attribute='value'] = [id="input-email"]
 4- If you are aware about tag, attribute and value => tag[attribute='value'] =input[id="input-email"]
+
+DemoWebsites for Practice:
+--------------------------
+https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+https://testautomationpractice.blogspot.com/
+https://www.nopcommerce.com/en/register
+

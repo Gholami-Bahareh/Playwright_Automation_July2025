@@ -12,5 +12,6 @@ test('test', async ({ page }) => {
   await expect(page).toHaveTitle("OrangeHRM")
   await expect(page).toHaveURL("https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index")
  
+ 
 });
 
