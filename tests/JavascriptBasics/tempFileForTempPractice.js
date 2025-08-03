@@ -89,9 +89,34 @@ console.log(b)
 // findMax(arr)
 
 
-console.log(this)
-function sayHi() {
-  console.log(this);
-}
+//.....
+ 
+//  function Person(firstName, lastName){
+//     console.log(this.firstName = firstName)
+//     this.lastName =lastName
+//     console.log("lala")
+//  }
 
-sayHi();
+//  Person("lool", "wool")
+
+const timer = {
+  name: "My Timer",
+  start: function () {
+    setTimeout(function () {
+      console.log(this.name);
+    }, 1000);
+  },
+};
+timer.start();
+
+const timer1 = {
+  name: "My Timer",
+  start: function () {
+    setTimeout(() => {
+      console.log(this.name);
+    }, 1000);
+  },
+};
+timer1.start();
+
+
