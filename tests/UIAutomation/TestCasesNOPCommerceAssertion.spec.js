@@ -6,5 +6,8 @@ test('Assertion Test', async ({ page }) => {
   await expect(page).toHaveTitle('nopCommerce demo store. Register');
   await expect(page.locator(".page-title")).toBeVisible();
   await expect(page.getByRole("heading",{name: "Register"})).toBeVisible();
+  await expect(page.getByRole("checkbox",{name: "Newsletter"})).toBeChecked()
+  await expect(page.locator("[type='text']")).toHaveCount(4); //if we know how many of this element is there in th page  
+
 });
 
