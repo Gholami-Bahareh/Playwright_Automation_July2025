@@ -118,5 +118,4 @@ const timer1 = {
   },
 };
 timer1.start();
-
-
+/
