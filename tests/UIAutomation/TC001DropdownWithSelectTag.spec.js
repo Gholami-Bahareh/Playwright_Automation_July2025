@@ -29,21 +29,18 @@ test('Dropdown Demo Test', async ({ page }) => {
   
 
   //to validatespecific country in the dropdown
-  const status = false
+  let status = false;
   for (const demo of demoOption)
   {
     let value = await demo.textContent();
-    const status = false 
     if(value.includes("Nepal")){
       status = true;
       break;
-
+    }
   }
 
- await expect(status).toBeFalsy()
+  await expect(status).toBeFalsy();
 
-  
-//   await expect(page.locator("[type='text']")).toHaveCount(4); //if we know how many of this element is there in th page  
+  //   await expect(page.locator("[type='text']")).toHaveCount(4); //if we know how many of this element is there in th page  
 
 });
-

@@ -36,6 +36,11 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
+    {
+      name: 'Smooke',
+      grep: /@Smoke/,
+    },
+  
     //bahar:to add other directories for other tests in othere places than "tests" folder
     // {
     //   name: 'DemoQA',

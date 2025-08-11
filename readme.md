@@ -88,5 +88,25 @@ https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 https://testautomationpractice.blogspot.com/
 https://www.nopcommerce.com/en/register
 
+Example of Structure of Tests of a website:
+-------------------------------------------
+20 pages -
+pageObject - 20 "js" file - We will not use tag in this file
+(in real time we will have 300-400 testcase.. So we need nested files)
+test
+ - Admin
+   - Job
+     - Jobtest01.spec.js 
+        +test('')   //inside each test i can give the tags(@smoke, @sanity, @regression...), jira id , steps...
+        +test('') 
+     - Jobtest02.spec.js
+   - user
+ - Leaves
+ - Dashboard
+
+
+
+
+
 
 
