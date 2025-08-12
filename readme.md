@@ -87,6 +87,10 @@ DemoWebsites for Practice:
 https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
 https://testautomationpractice.blogspot.com/
 https://www.nopcommerce.com/en/register
+https://demoblaze.com/
+https://ui.vision/
+https://the-internet.herokuapp.com/
+
 
 Example of Structure of Tests of a website:
 -------------------------------------------
