@@ -109,6 +109,17 @@ test
  - Dashboard
 
 
+ ----------------------------
+ when you have a site with 15 pages, playwright sugesst "to use POM(Page Object Model) style of writing
+ - create a file called : "Class File" (will be under on of folder named: page object) ..ok what is inside this file?
+   1: "page locators"  (inside this folder we will have 15 files , each for locators of a page)
+   2: "page functions" (contain actual logic that is happening in a articular page.. such as login, click, ..inside this file .. crete functions that give the "locator' as input)
+ - we also have that famous "test" foleder ...which contains all the test files:
+   - loginTest.spec.js
+   - omepageTest.spec.js
+   - ....
+
+
 
 
 

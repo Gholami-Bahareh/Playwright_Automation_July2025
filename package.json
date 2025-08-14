@@ -3,21 +3,23 @@
   "version": "1.0.0",
   "main": "hello.js",
   "scripts": {
-    "runAllTest":"npx playwright test",
-    "runAllTestwith3workers":"npx playwright test --workers=3",
-    "showReport" :"npx playwright show-report",
-    "runUITest" : "npx playwright test --ui",
+    "runAllTest": "npx playwright test",
+    "runAllTestwith3workers": "npx playwright test --workers=3",
+    "showReport": "npx playwright show-report",
+    "runUITest": "npx playwright test --ui",
     "SmokeTestSuite": "npx playwright test --grep @smoke",
-    "RegressionTestSuite": "npx playwright test --grep @Regression" ,
-    "SmokeTestSuiteViaProject": "npx playwright test --project=Smooke" 
-    
+    "RegressionTestSuite": "npx playwright test --grep @Regression",
+    "SmokeTestSuiteViaProject": "npx playwright test --project=Smooke"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "",  
   "devDependencies": {
     "@playwright/test": "^1.54.1",
     "@types/node": "^24.0.14"
+  },
+  "dependencies": {
+    "@playwright/mcp": "^0.0.33"
   }
 }
