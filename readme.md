@@ -119,6 +119,31 @@ test
    - omepageTest.spec.js
    - ....
 
+------------------------------
+Test Cases: Add a New Pet API
+-----------------------------
+
+1.Add Pet with Valid Data Input: Valid pet object (all required fields) Expected Result: Status code 200 OK, response contains the created pet object with matching data.
+
+2.Add Pet with Missing Required Field (name) Input: Pet object missing the name field Expected Result: Status code 400 Bad Request or appropriate error, error message indicating missing name.
+
+3.Add Pet with Invalid Data Type (id as string) Input: Pet object with id as "abc" (string) Expected Result: Status code 400 Bad Request or appropriate error, error message indicating invalid data type.
+
+4.Add Pet with Empty photoUrls Array Input: Pet object with photoUrls: [] Expected Result: Status code 200 OK, response contains the created pet object with empty photoUrls.
+
+5.Add Pet with Duplicate id Input: Pet object with an id that already exists Expected Result: Status code 409 Conflict or appropriate error, error message indicating duplicate ID.
+
+6.Add Pet with Invalid status Value Input: Pet object with status: "unknown" Expected Result: Status code 400 Bad Request or appropriate error, error message indicating invalid status value.
+
+7.Add Pet with Large Payload Input: Pet object with very large arrays for photoUrls and tags Expected Result: Status code 200 OK or 413 Payload Too Large if limits are exceeded.
+
+8.Add Pet with Special Characters in Fields Input: Pet object with special characters in name, category.name, and tags.name Expected Result: Status code 200 OK, response contains the created pet object with special characters preserved.
+
+9.Add Pet with Only Required Fields Input: Pet object with only required fields (id, name, photoUrls, status) Expected Result: Status code 200 OK, response contains the created pet object.
+
+10.Add Pet with Null Values in Optional Fields Input: Pet object with category and tags set to null Expected Result: Status code 200 OK, response contains the created pet object with category and tags as null.
+
+
 
 
 
